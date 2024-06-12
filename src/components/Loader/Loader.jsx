@@ -6,9 +6,10 @@ function Loader() {
   return (
     <Oval
       visible={true}
-      height="80"
-      width="80"
-      color="#4fa94d"
+      height="60"
+      width="60"
+      color="#ba88f8"
+      secondaryColor="#ffffff"
       ariaLabel="oval-loading"
       wrapperStyle={{}}
       wrapperClass={css.loader}

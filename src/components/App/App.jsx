@@ -22,13 +22,13 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={css.wrapper}>
       <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
       <SearchBox />
       <ContactList/>
       {isLoading && <Loader/>}
-      {isError && <Error>Error message</Error>}
+      {isError && <Error>Oops! Please try again later.</Error>}
     </div>
   );
 }

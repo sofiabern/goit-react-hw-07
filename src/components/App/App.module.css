@@ -1,3 +1,8 @@
+.wrapper{
+    width: 840px;
+    margin: 0 auto;
+}
+
 .title{
     font-family: Roboto, sans-serif;
     color: #ffffff;

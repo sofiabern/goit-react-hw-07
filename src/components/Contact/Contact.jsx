@@ -14,11 +14,11 @@ function Contact({ contact }) {
     <div className={css["contact-wrapper"]}>
       <div className={css["contact-info"]}>
         <p className={css["contact-text"]}>
-          <FaUser className={css.icon} />
+          <FaUser className={css.icon} color="#ba88f8"/>
           {contact.name}
         </p>
         <p className={css["contact-text"]}>
-          <FaPhone className={css.icon} />
+          <FaPhone className={css.icon} color="#ba88f8" />
           {contact.number}
         </p>
       </div>

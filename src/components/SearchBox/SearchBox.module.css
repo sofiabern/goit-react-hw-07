@@ -1,30 +1,22 @@
-.text {
-  color: #ffffff;
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-}
 
 .input {
   font-family: Roboto, sans-serif;
   font-size: 16px;
+
   padding: 6px;
   margin-bottom: 16px;
 
   border-radius: 4px;
   border: 2px solid #ba88f8;
-  
 }
 
-input::placeholder{
+input::placeholder {
   font-family: Roboto, sans-serif;
   font-size: 16px;
 }
 
-.input:focus{
+.input:focus {
   border-color: transparent;
   outline: 2px solid #00ffc3;
-  box-shadow: 
-  0 0 10px #00ffc380,
-  0 0 20px #00ffc3b2,
-  0 0 30px #00ffc3dc;
+  box-shadow: 0 0 10px #00ffc380, 0 0 20px #00ffc3b2, 0 0 30px #00ffc3dc;
 }
