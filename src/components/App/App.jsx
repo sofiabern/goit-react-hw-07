@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchContacts } from "../../redux/contactsOps";
 import { selectError, selectLoading } from "../../redux/contactsSlice";
 
-import "./App.css";
+import css from "./App.module.css";
 
 import ContactList from "../ContactList/ContactList";
 import SearchBox from "../SearchBox/SearchBox";
@@ -23,12 +23,12 @@ function App() {
 
   return (
     <div>
-      <h1>Phonebook</h1>
-      {isLoading && <Loader/>}
-      {isError && <Error>Error message</Error>}
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
       <SearchBox />
       <ContactList/>
+      {isLoading && <Loader/>}
+      {isError && <Error>Error message</Error>}
     </div>
   );
 }

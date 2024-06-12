@@ -22,7 +22,7 @@ function Contact({ contact }) {
           {contact.number}
         </p>
       </div>
-      <button onClick={handleDeleteContact}>Delete</button>
+      <button className={css.button} onClick={handleDeleteContact}>Delete</button>
     </div>
   );
 }

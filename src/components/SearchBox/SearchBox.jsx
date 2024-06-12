@@ -11,9 +11,10 @@ function SearchBox() {
 
   return (
     <>
-      <p>Find contacts by name</p>
+      <p className={css.text}>Find contacts by name</p>
       <input
         className={css.input}
+        placeholder="Who are you looking for?"
         type="text"
         value={nameFilter}
         onChange={e => dispatch(changeFilter(e.target.value))}
