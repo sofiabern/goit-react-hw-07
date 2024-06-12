@@ -23,12 +23,17 @@ function App() {
 
   return (
     <div className={css.wrapper}>
-      <h1 className={css.title}>Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
-      <ContactList/>
-      {isLoading && <Loader/>}
-      {isError && <Error>Oops! Please try again later.</Error>}
+      {isLoading === false && (
+        <div>
+          <h1 className={css.title}>Phonebook</h1>
+          <ContactForm />
+          <SearchBox />
+          <ContactList />
+        </div>
+      )}
+
+      {isLoading && <Loader />}
+      {isError && <Error>Oops! Please try again</Error>}
     </div>
   );
 }
