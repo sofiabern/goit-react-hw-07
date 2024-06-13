@@ -8,6 +8,8 @@
 
   border-radius: 4px;
   border: 2px solid #ba88f8;
+
+  transition: box-shadow 200ms ease-in-out;
 }
 
 input::placeholder {
