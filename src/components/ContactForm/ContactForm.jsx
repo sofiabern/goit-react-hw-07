@@ -29,7 +29,7 @@ function ContactForm() {
   const fieldId = useId();
 
   const handleSubmit = (values, actions) => {
-    dispatch(addContact({...values}));
+    dispatch(addContact({ ...values }));
     actions.resetForm();
   };
 
@@ -40,26 +40,38 @@ function ContactForm() {
       validationSchema={ContactSchema}
     >
       <Form className={css.form}>
-        <label htmlFor={`${fieldId}-name`} className={css.label}>
-          Name
-        </label>
-        <Field
-          type="text"
-          name="name"
-          id={`${fieldId}-name`}
-          className={css.field}
-        ></Field>
-        <ErrorMessage name="name" component="span" className={css.error} />
-        <label htmlFor={`${fieldId}-number`} className={css.label}>
-          Number
-        </label>
-        <Field
-          type="text"
-          name="number"
-          id={`${fieldId}-number`}
-          className={css.field}
-        ></Field>
-        <ErrorMessage name="number" component="span" className={css.error} />
+        <div className={css["field-wrapper"]}>
+          <label htmlFor={`${fieldId}-name`} className={css.label}>
+            Name
+          </label>
+          <Field
+            type="text"
+            name="name"
+            id={`${fieldId}-name`}
+            className={css.field}
+          ></Field>
+          <ErrorMessage
+            name="name"
+            component="span"
+            className={css["error-name"]}
+          />
+        </div>
+        <div className={css["field-wrapper"]}>
+          <label htmlFor={`${fieldId}-number`} className={css.label}>
+            Number
+          </label>
+          <Field
+            type="text"
+            name="number"
+            id={`${fieldId}-number`}
+            className={css.field}
+          ></Field>
+          <ErrorMessage
+            name="number"
+            component="span"
+            className={css["error-number"]}
+          />
+        </div>
         <button type="submit" className={css.btn}>
           Add contact
         </button>
