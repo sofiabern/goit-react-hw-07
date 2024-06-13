@@ -23,14 +23,10 @@ function App() {
 
   return (
     <div className={css.wrapper}>
-      {isLoading === false && (
-        <div>
-          <h1 className={css.title}>Phonebook</h1>
-          <ContactForm />
-          <SearchBox />
-          <ContactList />
-        </div>
-      )}
+      <h1 className={css.title}>Phonebook</h1>
+      <ContactForm />
+      <SearchBox />
+      <ContactList />
 
       {isLoading && <Loader />}
       {isError && <Error>Oops! Please try again</Error>}
